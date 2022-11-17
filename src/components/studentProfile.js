@@ -8,9 +8,9 @@ function StudentProfile(props) {
             <h3> Major: {props.item.Major}</h3>
             <h3> Student Status: {props.item.StudentStatus} </h3>
             <h4> Age: {props.item.Age}</h4>
-            <h4> Grade: {props.item.grade} </h4>
+            <h4> GPA (out of 100): {props.item.grade} </h4>
             <p> State: {props.item.State} </p>
-            <button onClick={() => {props.addToCart(props.item)}}> Add to List </button>
+            <button onClick={() => {props.addToCart(props.item)}}> Add to List of Accepted Students </button>
         </div>
     )
 }

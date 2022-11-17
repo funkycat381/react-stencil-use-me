@@ -9,10 +9,10 @@
         "StudentStatus": "Graduate",
         "Major": "Politics",
         "Country": "US",
-        "Age": "30",
-        "SAT": "2263",
-        "grade": "67",
-        "Height": "61",
+        "Age": 30,
+        "SAT": 2263,
+        "grade": 67,
+        "Height": 61,
         "Image": "images/student.jpeg"
     },
     {
@@ -25,10 +25,10 @@
         "StudentStatus": "Undergraduate",
         "Major": "Math",
         "Country": "US",
-        "Age": "19",
-        "SAT": "2006",
-        "grade": "63",
-        "Height": "64",
+        "Age": 19,
+        "SAT": 2006,
+        "grade": 63,
+        "Height": 64,
         "Image": "images/Student123.jpeg"
     },
     {
@@ -41,11 +41,11 @@
         "StudentStatus": "Graduate",
         "Major": "Math",
         "Country": "US",
-        "Age": "26",
-        "SAT": "2221",
-        "grade": "78",
-        "Height": "73",
-        "Image": "images/student.jpeg"
+        "Age": 26,
+        "SAT": 2221,
+        "grade": 78,
+        "Height": 73,
+        "Image": "images/student2.png"
     },
     {
         "key": "4",
@@ -57,11 +57,11 @@
         "StudentStatus": "Graduate",
         "Major": "Econ",
         "Country": "US",
-        "Age": "33",
-        "SAT": "1716",
-        "grade": "78",
-        "Height": "68",
-        "Image": "images/student.jpeg"
+        "Age": 33,
+        "SAT": 1716,
+        "grade": 78,
+        "Height": 68,
+        "Image": "images/student3.jpeg"
     },
     {
         "key": "5",
@@ -73,11 +73,11 @@
         "StudentStatus": "Graduate",
         "Major": "Econ",
         "Country": "US",
-        "Age": "37",
-        "SAT": "1701",
-        "grade": "65",
-        "Height": "71",
-        "Image": "images/student.jpeg"
+        "Age": 37,
+        "SAT": 1701,
+        "grade": 65,
+        "Height": 71,
+        "Image": "images/student4.jpeg"
     },
     {
         "key": "6",
@@ -89,11 +89,11 @@
         "StudentStatus": "Graduate",
         "Major": "Econ",
         "Country": "Israel",
-        "Age": "25",
-        "SAT": "1786",
-        "grade": "69",
-        "Height": "67",
-        "Image": "images/student.jpeg"
+        "Age": 25,
+        "SAT": 1786,
+        "grade": 69,
+        "Height": 67,
+        "Image": "images/student5.jpeg"
     },
     {
         "key": "7",
@@ -105,11 +105,11 @@
         "StudentStatus": "Graduate",
         "Major": "Politics",
         "Country": "US",
-        "Age": "39",
-        "SAT": "1577",
-        "grade": "96",
-        "Height": "70",
-        "Image": "images/student.jpeg"
+        "Age": 39,
+        "SAT": 1577,
+        "grade": 96,
+        "Height": 70,
+        "Image": "images/student6.jpeg"
     },
     {
         "key": "8",
@@ -121,11 +121,11 @@
         "StudentStatus": "Undergraduate",
         "Major": "Politics",
         "Country": "US",
-        "Age": "21",
-        "SAT": "1842",
-        "grade": "87",
-        "Height": "62",
-        "Image": "images/student.jpeg"
+        "Age": 21,
+        "SAT": 1842,
+        "grade": 87,
+        "Height": 62,
+        "Image": "images/student7.jpeg"
     },
     {
         "key": "9",
@@ -137,11 +137,11 @@
         "StudentStatus": "Undergraduate",
         "Major": "Math",
         "Country": "Canada",
-        "Age": "18",
-        "SAT": "1813",
-        "grade": "91",
-        "Height": "62",
-        "Image": "images/student.jpeg"
+        "Age": 18,
+        "SAT": 1813,
+        "grade": 91,
+        "Height": 62,
+        "Image": "images/student8.jpeg"
     },
     {
         "key": "10",
@@ -153,11 +153,11 @@
         "StudentStatus": "Graduate",
         "Major": "Math",
         "Country": "US",
-        "Age": "33",
-        "SAT": "2041",
-        "grade": "71",
-        "Height": "66",
-        "Image": "images/student.jpeg"
+        "Age": 33,
+        "SAT": 2041,
+        "grade": 71,
+        "Height": 66,
+        "Image": "images/student16.jpeg"
     },
     {
         "key": "11",
@@ -169,11 +169,11 @@
         "StudentStatus": "Undergraduate",
         "Major": "Econ",
         "Country": "US",
-        "Age": "18",
-        "SAT": "1787",
-        "grade": "82",
-        "Height": "67",
-        "Image": "images/student.jpeg"
+        "Age": 18,
+        "SAT": 1787,
+        "grade": 82,
+        "Height": 67,
+        "Image": "images/student10.png"
     },
     {
         "key": "12",
@@ -185,14 +185,14 @@
         "StudentStatus": "Graduate",
         "Major": "Math",
         "Country": "US",
-        "Age": "38",
-        "SAT": "1513",
-        "grade": "79",
-        "Height": "59",
-        "Image": "images/student.jpeg"
+        "Age": 38,
+        "SAT": 1513,
+        "grade": 79,
+        "Height": 59,
+        "Image": "images/student11.jpeg"
     },
     {
-        "key": "13",
+        "key": 13,
         "LastName": "Hantle",
         "FirstName": "Frank",
         "City": "Varna",
@@ -201,11 +201,11 @@
         "StudentStatus": "Graduate",
         "Major": "Politics",
         "Country": "Bulgaria",
-        "Age": "30",
-        "SAT": "1637",
-        "grade": "79",
-        "Height": "63",
-        "Image": "images/student.jpeg"
+        "Age": 30,
+        "SAT": 1637,
+        "grade": 79,
+        "Height": 63,
+        "Image": "images/student15.jpeg"
     },
     {
         "key": "14",
@@ -217,11 +217,11 @@
         "StudentStatus": "Graduate",
         "Major": "Politics",
         "Country": "Russia",
-        "Age": "30",
-        "SAT": "1512",
-        "grade": "70",
-        "Height": "75",
-        "Image": "images/student.jpeg"
+        "Age": 30,
+        "SAT": 1512,
+        "grade": 70,
+        "Height": 75,
+        "Image": "images/student13.jpeg"
     },
     {
         "key": "15",
@@ -233,10 +233,10 @@
         "StudentStatus": "Undergraduate",
         "Major": "Math",
         "Country": "US",
-        "Age": "21",
-        "SAT": "1338",
-        "grade": "82",
-        "Height": "64",
-        "Image": "images/student.jpeg"
+        "Age": 21,
+        "SAT": 1338,
+        "grade": 82,
+        "Height": 64,
+        "Image": "images/student14.jpeg"
     }
 ]
