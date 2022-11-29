@@ -89,7 +89,7 @@ img {
 }
 
 h1 {
-  color: var(--accent-color);
+  color: #388697;
   display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -146,7 +146,7 @@ margin-inline-end: 0px;
 }
 
 .container-fluid {
-  background-color: var(--primary-color);
+  background-color: #DADFF7;
   padding: 1%;
 }
 
@@ -155,7 +155,7 @@ margin-inline-end: 0px;
 }
 
 div.the-body>div:nth-of-type(odd) {
-  background: var(--primary-color);
+  background: #DADFF7;
 }
 
 div.the-body>div:nth-of-type(even) {

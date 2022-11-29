@@ -7,8 +7,8 @@ function CheckExample() {
         <div key={`default-${type}`} className="mb-3">
           <Form.Check 
             type={type}
-            id={`default-${type}`}
-            label={`default ${type}`}
+            id={item}
+            label={item}
           />
 
           <Form.Check
