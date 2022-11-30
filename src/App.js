@@ -12,7 +12,7 @@ function App() {
 
   const [type, setType] = useState("All");
 
-  const [major, setMajor] = useState([]);
+  const [major, setMajor] = useState("All");
 
   const [sortby, setSortBy] = useState("SAT");
 
@@ -24,12 +24,19 @@ function App() {
     setMajor(item);
   }
 
-  function handleChange(event) {
-    setMajor(event);
-  }
-
   function selectSortBy(item) {
     setSortBy(item)
+  }
+
+  const matchesFilterMajor = item => {
+    // all items should be shown when no filter is selected
+    if (major === "All") {
+      return true
+    } else if (major === item.Major) {
+      return true
+    } else {
+      return false
+    }
   }
 
   const matchesFilterType = item => {
@@ -41,23 +48,6 @@ function App() {
     } else {
       return false
     }
-  }
-
-  const matchesFilterMajor = item => {
-    return true
-    // all items should be shown when no filter is selected
-   /* if (major === []) {
-      return true
-    } else if (item.Major.includes(major)) {
-      if (major.includes(item.Major)) {
-        return true
-      }
-      else {
-        return false
-      }
-    }
-    ///TODO: Use setMajor to change states  of list!
-    else return false*/
   }
 
   const sortedData = studentJson.sort((a, b) => {
@@ -74,20 +64,18 @@ function App() {
   const statefilteredData = sortedData.filter(matchesFilterType)
   const filteredData = statefilteredData.filter(matchesFilterMajor)
 
-  //- creates a filtering condition
-
-
   function addToCart(item) {
-    setCartItems([...cartItems, item])
+    if (cartItems.includes(item) == false) {
+      setCartItems([...cartItems, item])
+    }
+
   }
 
   function removeFromCart(value) {
-    setCartItems(cartItems.filter(function(ele) {
+    setCartItems(cartItems.filter(function (ele) {
       return ele.key !== value
     }))
   }
-
-  
 
   function calculateTotal() {
     let runningAverage = 0
@@ -117,108 +105,110 @@ function App() {
         </h3>
 
         <Form>
-      {['Radio'].map((type) => (
-          <div key={`default-${type}`} className="mb-3">
-            <Form.Check
-              name="groupa"
-              type={type}
-              id= "5"
-              label="Arizona"
-              
-            />
-            <Form.Check
-              type={type}
-              name="groupa"
-              id= "1"
-              label="California"
-            />
-            <Form.Check
-              type={type}
-              name="groupa"
-              id= "10"
-              label="Florida"
-            />
-            <Form.Check
-              name="groupa"
-              type={type}
-              id= "6"
-              label="Georgia"
-            />
-            <Form.Check
-              type={type}
-              name="groupa"
-              id= "23"
-              label="New York"
-            />
-            <Form.Check
-              type={type}
-              name="groupa"
-              id= "81"
-              label="Ohio"
-              onChange={this.handleChange}
+          {['Radio'].map((type) => (
+            <div key={`default-${type}`} className="mb-3">
+              <Form.Check
+                name="groupa"
+                type={type}
+                id="100"
+                label="All States"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("All")}
               />
-          </div>
-        ))}
-    </Form>
+              <Form.Check
+                name="groupa"
+                type={type}
+                id="5"
+                label="Arizona"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("Arizona")}
+              />
+              <Form.Check
+                type={type}
+                name="groupa"
+                id="1"
+                label="California"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("California")}
+              />
+              <Form.Check
+                type={type}
+                name="groupa"
+                id="10"
+                label="Florida"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("Florida")}
+              />
+              <Form.Check
+                name="groupa"
+                type={type}
+                id="6"
+                label="Georgia"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("Georgia")}
+              />
+              <Form.Check
+                type={type}
+                name="groupa"
+                id="23"
+                label="New York"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("New York")}
+              />
+              <Form.Check
+                type={type}
+                name="groupa"
+                id="81"
+                label="Ohio"
+                onSelect={selectFilterType}
+                onClick={() => selectFilterType("Ohio")}
 
-        <br></br>
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("All")}> Show All States </button>
+              />
+            </div>
+          ))}
+        </Form>
 
-        <br></br>
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("Arizona")}> Arizona </button>
-        <br></br>
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("California")}> California </button>
-        <br></br>
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("Florida")}> Florida </button>
-        <br></br>
-
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("Georgia")}> Georgia </button>
-
-        <br></br>
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("New York")}> New York </button>
-        <br></br>
-        <button onSelect={selectFilterType} onClick={() => selectFilterType("Ohio")}> Ohio </button>
-        <br></br>
         <h3>
-          Major
+          Department
         </h3>
-        <button onSelect={selectMajorFilter} onClick={() => selectMajorFilter([])}> Show all majors </button>
         <Form>
-      {['Checkbox'].map((type) => (
-          <div key={`default-${type}`} className="mb-3">
-            <Form.Check
-              name="groupa"
-              type={type}
-              id= "5"
-              label="Econ"
-            />
-            <Form.Check
-              type={type}
-              name="groupa"
-              id= "1"
-              label="Math"
-            />
-            <Form.Check
-              type={type}
-              name="groupa"
-              id= "10"
-              label="politics"
-              onSelect
-            />
-          </div>
-        ))}
-    </Form>
-        <button onSelect={selectMajorFilter} onClick={() => selectMajorFilter([...major, "Econ"])}> Econ </button>
-        <br></br>
-        <button onSelect={selectMajorFilter} onClick={() => selectMajorFilter([...major, "Math"])}> Math </button>
-        <br></br>
-        <button onSelect={selectMajorFilter} onClick={() => selectMajorFilter([...major, "Politics"])}> Politics </button>
-
-        <h3>
-          Application Status
-        </h3>
-        //TODO: Fix this TODO: Multiple Majors edge case
-        //TODO: Checkboxes/radios formatting
+          {['Radio'].map((type) => (
+            <div key={`default-${type}`} className="mb-3">
+              <Form.Check
+                name="groupc"
+                type={type}
+                id="11"
+                label="All Departments"
+                onSelect={selectFilterType}
+                onClick={() => selectMajorFilter("All")}
+              />
+              <Form.Check
+                name="groupc"
+                type={type}
+                id="5"
+                label="Econ"
+                onSelect={selectFilterType}
+                onClick={() => selectMajorFilter("Econ")}
+              />
+              <Form.Check
+                type={type}
+                name="groupc"
+                id="1"
+                label="Math"
+                onSelect={selectFilterType}
+                onClick={() => selectMajorFilter("Math")}
+              />
+              <Form.Check
+                type={type}
+                name="groupc"
+                id="10"
+                label="Politics"
+                onSelect={selectFilterType}
+                onClick={() => selectMajorFilter("Politics")}
+              />
+            </div>
+          ))}
+        </Form>
         <h2>List of Accepted Students</h2>
         {cartItems.map((item, index) => (<p> {item.LastName}, {item.FirstName} <button onClick={() => removeFromCart(item.key)}> Remove </button>
         </p>))}
