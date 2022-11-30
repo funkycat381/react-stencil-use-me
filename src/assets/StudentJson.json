@@ -13,7 +13,7 @@
         "SAT": 2263,
         "grade": 67,
         "Height": 61,
-        "Image": "src/assets/images/Student.jpeg"
+        "Image": "./images/Student.jpeg"
     },
     {
         "key": "2",
@@ -29,7 +29,7 @@
         "SAT": 2006,
         "grade": 63,
         "Height": 64,
-        "Image": "src/assets/images/Student123.jpeg"
+        "Image": "./images/Student123.jpeg"
     },
     {
         "key": "3",
