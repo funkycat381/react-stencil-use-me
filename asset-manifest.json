@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-stencil-use-me/static/css/main.c16df0b0.css",
-    "main.js": "/react-stencil-use-me/static/js/main.4307ddd1.js",
+    "main.js": "/react-stencil-use-me/static/js/main.13886bab.js",
     "index.html": "/react-stencil-use-me/index.html",
     "main.c16df0b0.css.map": "/react-stencil-use-me/static/css/main.c16df0b0.css.map",
-    "main.4307ddd1.js.map": "/react-stencil-use-me/static/js/main.4307ddd1.js.map"
+    "main.13886bab.js.map": "/react-stencil-use-me/static/js/main.13886bab.js.map"
   },
   "entrypoints": [
     "static/css/main.c16df0b0.css",
-    "static/js/main.4307ddd1.js"
+    "static/js/main.13886bab.js"
   ]
 }
