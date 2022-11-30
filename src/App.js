@@ -179,7 +179,7 @@ function App() {
                 type={type}
                 id="11"
                 label="All Departments"
-                onSelect={selectFilterType}
+                onSelect={selectMajorFilter}
                 onClick={() => selectMajorFilter("All")}
               />
               <Form.Check
@@ -187,7 +187,7 @@ function App() {
                 type={type}
                 id="5"
                 label="Econ"
-                onSelect={selectFilterType}
+                onSelect={selectMajorFilter}
                 onClick={() => selectMajorFilter("Econ")}
               />
               <Form.Check
@@ -195,7 +195,7 @@ function App() {
                 name="groupc"
                 id="1"
                 label="Math"
-                onSelect={selectFilterType}
+                onSelect={selectMajorFilter}
                 onClick={() => selectMajorFilter("Math")}
               />
               <Form.Check
@@ -203,7 +203,7 @@ function App() {
                 name="groupc"
                 id="10"
                 label="Politics"
-                onSelect={selectFilterType}
+                onSelect={selectMajorFilter}
                 onClick={() => selectMajorFilter("Politics")}
               />
             </div>
