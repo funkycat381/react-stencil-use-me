@@ -13,7 +13,7 @@
         "SAT": 2263,
         "grade": 67,
         "Height": 61,
-        "Image": "images/student.jpeg"
+        "Image": "src/assets/images/Student.jpeg"
     },
     {
         "key": "2",
@@ -29,7 +29,7 @@
         "SAT": 2006,
         "grade": 63,
         "Height": 64,
-        "Image": "public/images/Student123.jpeg"
+        "Image": "src/assets/images/Student123.jpeg"
     },
     {
         "key": "3",
@@ -45,7 +45,7 @@
         "SAT": 2221,
         "grade": 78,
         "Height": 73,
-        "Image": "public/images/student2.png"
+        "Image": "src/assets/images/student2.png"
     },
     {
         "key": "4",
@@ -61,7 +61,7 @@
         "SAT": 1716,
         "grade": 78,
         "Height": 68,
-        "Image": "public/images/student14.jpeg"
+        "Image": "src/assets/images/student14.jpeg"
     },
     {
         "key": "5",
@@ -77,7 +77,7 @@
         "SAT": 1701,
         "grade": 65,
         "Height": 71,
-        "Image": "public/images/student16.jpeg"
+        "Image": "src/assets/images/student16.jpeg"
     },
     {
         "key": "6",
@@ -93,7 +93,7 @@
         "SAT": 1786,
         "grade": 69,
         "Height": 67,
-        "Image": "public/images/student8.jpeg"
+        "Image": "src/assets/images/student8.jpeg"
     },
     {
         "key": "7",
@@ -109,7 +109,7 @@
         "SAT": 1577,
         "grade": 96,
         "Height": 70,
-        "Image": "public/images/student6.jpeg"
+        "Image": "src/assets/images/student6.jpeg"
     },
     {
         "key": "8",
@@ -125,7 +125,7 @@
         "SAT": 1842,
         "grade": 87,
         "Height": 62,
-        "Image": "public/images/student7.jpeg"
+        "Image": "src/assets/images/student7.jpeg"
     },
     {
         "key": "9",
@@ -141,7 +141,7 @@
         "SAT": 1813,
         "grade": 91,
         "Height": 62,
-        "Image": "public/images/student5.jpeg"
+        "Image": "src/assets/images/student5.jpeg"
     },
     {
         "key": "10",
@@ -157,7 +157,7 @@
         "SAT": 2041,
         "grade": 71,
         "Height": 66,
-        "Image": "public/images/student4.jpeg"
+        "Image": "src/assets/images/student4.jpeg"
     },
     {
         "key": "11",
@@ -173,7 +173,7 @@
         "SAT": 1787,
         "grade": 82,
         "Height": 67,
-        "Image": "public/images/student10.png"
+        "Image": "src/assets/images/student10.png"
     },
     {
         "key": "12",
@@ -189,7 +189,7 @@
         "SAT": 1513,
         "grade": 79,
         "Height": 59,
-        "Image": "public/images/student11.jpeg"
+        "Image": "src/assets/images/student11.jpeg"
     },
     {
         "key": 13,
@@ -205,7 +205,7 @@
         "SAT": 1637,
         "grade": 79,
         "Height": 63,
-        "Image": "public/images/student15.jpeg"
+        "Image": "src/assets/images/student15.jpeg"
     },
     {
         "key": "14",
@@ -221,7 +221,7 @@
         "SAT": 1512,
         "grade": 70,
         "Height": 75,
-        "Image": "public/images/student13.jpeg"
+        "Image": "src/assets/images/student13.jpeg"
     },
     {
         "key": "15",
@@ -237,6 +237,6 @@
         "SAT": 1338,
         "grade": 82,
         "Height": 64,
-        "Image": "public/images/student3.jpeg"
+        "Image": "src/assets/images/student3.jpeg"
     }
 ]
